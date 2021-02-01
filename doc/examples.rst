@@ -27,3 +27,10 @@ PySide
 
 .. literalinclude:: /../examples/pyside.py
    :linenos:
+
+PySide2
+-------
+
+.. literalinclude:: /../examples/pyside2.py
+   :linenos:
+

@@ -30,7 +30,7 @@ setup(
     namespace_packages=['pyqode'],
     version=read_version(),
     packages=[p for p in find_packages() if 'test' not in p],
-    keywords=["qt PyQt4 PyQt5 PySide"],
+    keywords=["qt PyQt4 PyQt5 PySide PySide2"],
     url='https://github.com/pyQode/pyqode.qt',
     license='MIT',
     author='Colin Duquesnoy',
@@ -49,4 +49,5 @@ setup(
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Software Development :: Widget Sets'])

@@ -24,7 +24,7 @@ About
 supports both PyQt and PySide.
 
 
-We provide support for PyQt5, PyQt4 and PySide using the PyQt5 layout (where
+We provide support for PyQt5, PyQt4, PySide2 and PySide using the PyQt5 layout (where
 the QtGui module has been split into QtGui and QtWidgets).
 
 
@@ -47,7 +47,7 @@ This project is licensed under the MIT license.
 Requirements
 ------------
 
-You need *PyQt5* or *PyQt4* or *PySide* installed on your system to make use
+You need *PyQt5* or *PyQt4* or *PySide2* or *PySide* installed on your system to make use
 of pyqode.qt, obviously.
 
 
