@@ -9,7 +9,6 @@ from pyqode.qt import PYSIDE_API
 from pyqode.qt import PYSIDE2_API
 
 if os.environ[QT_API] in PYQT5_API:
-    print("PYQT5_API")
     try:
         from PyQt5.QtWebKitWidgets import QWebView
         from PyQt5.QtWebKitWidgets import QWebPage
@@ -22,10 +21,8 @@ if os.environ[QT_API] in PYQT5_API:
             QWebPage = None
             QWebView = None
 elif os.environ[QT_API] in PYQT4_API:
-    print("PYQT4_API")
     from PyQt4.QtWebKit import QWebView, QWebPage
 elif os.environ[QT_API] in PYSIDE_API:
-    print("PYSIDE_API")
     from PySide.QtWebKit import QWebView, QWebPage
 elif os.environ[QT_API] in PYSIDE2_API:
     raise ImportError("QtWebKit support is incomplete for PySide2")

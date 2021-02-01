@@ -17,7 +17,6 @@ if os.environ[QT_API] in PYQT5_API:
     from PyQt5.QtCore import pyqtProperty as Property
     # use a common __version__
     from PyQt5.QtCore import QT_VERSION_STR as __version__
-    print("PYQT5_API")
 elif os.environ[QT_API] in PYQT4_API:
     from PyQt4.QtCore import *
     # compatibility with pyside
@@ -27,16 +26,13 @@ elif os.environ[QT_API] in PYQT4_API:
     from PyQt4.QtGui import QSortFilterProxyModel
     # use a common __version__
     from PyQt4.QtCore import QT_VERSION_STR as __version__
-    print("PYQT4_API")
 elif os.environ[QT_API] in PYSIDE_API:
     from PySide.QtCore import *
     from PySide.QtGui import QSortFilterProxyModel
     # use a common __version__
     import PySide.QtCore
     __version__ = PySide.QtCore.__version__
-    print("PYSIDE_API")
 elif os.environ[QT_API] in PYSIDE2_API:
-    print("PYSIDE2_API")
     from PySide2.QtCore import *
     from PySide2.QtCore import QSortFilterProxyModel
     # use a common __version__

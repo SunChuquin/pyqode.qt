@@ -15,15 +15,11 @@ from pyqode.qt import PYSIDE2_API
 
 if os.environ[QT_API] in PYQT5_API:
     from PyQt5.QtGui import *
-    print("PYQT5_API")
 elif os.environ[QT_API] in PYQT4_API:
     from PyQt4.QtGui import *
-    print("PYQT4_API")
 elif os.environ[QT_API] in PYSIDE_API:
     from PySide.QtGui import *
-    print("PYSIDE_API")
 elif os.environ[QT_API] in PYSIDE2_API:
-    print("PYSIDE2_API")
     from PySide2.QtGui import *
 else:
     raise ImportError('No Qt bindings could be found')
